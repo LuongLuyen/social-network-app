@@ -12,14 +12,14 @@ function Login({navigation}) {
                 <TextInput
                     style={styles.input}
                     onChangeText={setName}
-                    placeholder="username"
+                    placeholder="Tên đăng nhập"
                     value={name}
                 />
                 <TextInput
                     style={styles.input}
                     onChangeText={setPassword}
                     value={password}
-                    placeholder="password"
+                    placeholder="Mật khẩu"
                 />
                 <View style={styles.information}>
                 <Text>Tài khoản phải từ 6 đến 20 kí tự </Text>
@@ -30,7 +30,8 @@ function Login({navigation}) {
                     <Button
                         title="Login"
                         onPress={()=> 
-                        navigation.navigate('Content')}
+                            navigation.navigate('HomeApp')
+                        }
                         color= '#333'
                     />
                 </View>
@@ -46,7 +47,7 @@ function Login({navigation}) {
                 </View>
             </View>
       </SafeAreaView>
-     )
+    )
 }
 const styles = StyleSheet.create({
     title: {
