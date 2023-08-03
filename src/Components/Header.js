@@ -9,14 +9,18 @@ function Header() {
                 <Text style={styles.name}>Social Network</Text>
             </View>
             <View style={styles.headerUpload}>
-                <Feather style={styles.headerUploadItem} name="search" size={24} color="black" />
-                <Ionicons style={styles.headerUploadItem} name="ios-notifications-outline" size={24} color="black" />
-                <AntDesign style={styles.headerUploadItem} name="bars" size={24} color="black" />
+                <Feather style={styles.headerUploadItem} name="search" size={24} color="blue" />
+                <Ionicons style={styles.headerUploadItem} name="ios-notifications-outline" size={24} color="blue" />
+                <AntDesign style={styles.headerUploadItem} name="bars" size={24} color="blue" />
             </View>
         </View>
     )
 }
 const styles = StyleSheet.create({
+    name: {
+        color: 'blue',
+        fontSize: 20
+    },
     header: {
         margin: 10,
         width: 340,
@@ -32,7 +36,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     headerUploadItem: {
-        marginRight: '10%',
+        marginRight: '6%',
     }
 })
 export default Header

@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     title: {
         height: 40,
         margin: 12,
-        color: '#333',
+        color: 'blue',
         fontSize: 30,
         bottom: 30,
     },
