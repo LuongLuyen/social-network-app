@@ -19,7 +19,8 @@ function Header() {
 const styles = StyleSheet.create({
     name: {
         color: 'blue',
-        fontSize: 20
+        fontSize: 20,
+        fontWeight: '900'
     },
     header: {
         margin: 10,

@@ -6,7 +6,7 @@ function Watch() {
             <Header/>
             <View style={styles.container}>
                 <Text>
-                    Setting
+                    Watch
                 </Text>
             </View>
         </View>

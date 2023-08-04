@@ -10,64 +10,61 @@ function Setting() {
         <View>
             <Header/>
             <ScrollView>
-                <View style={styles.container}>
-                    <View style={styles.settingWrap}>
+                <View style={styles.settingWrap}>
                     <View style={styles.setting}>
                         <MaterialIcons name="security" size={24} color="blue" />
                         <Text style={styles.settingContent} >Tài khoản và bảo mật</Text>
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <AntDesign name="lock" size={24} color="blue" />
                         <Text style={styles.settingContent} >Quyền riêng tư</Text>
                     </View>
-                    </View>
-                    <View style={styles.settingWrap}>
+                </View>
+
+                <View style={styles.settingWrap}>
                     <View style={styles.setting}>
                         <MaterialIcons name="sd-storage" size={24} color="blue" />
                         <Text style={styles.settingContent} >Dung lượng và dữ liệu</Text>
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <MaterialIcons name="backup" size={24} color="blue" />
                         <Text style={styles.settingContent} >Sao lưu và khôi phục</Text>
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <Ionicons  name="ios-notifications-outline" size={24} color="blue" />
                         <Text style={styles.settingContent} >Thông báo</Text>
+                    </View>
+                </View>
 
-                    </View>
-                    </View>
-                    <View style={styles.settingWrap}>
+                <View style={styles.settingWrap}>
                     <View style={styles.setting}>
                         <AntDesign name="message1" size={24} color="blue" />
                         <Text style={styles.settingContent} >Tin nhắn</Text>
-
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <Feather name="clock" size={24} color="blue" />
                         <Text style={styles.settingContent} >Nhật ký</Text>
-
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <Feather name="phone" size={24} color="blue" />
                         <Text style={styles.settingContent} >Cuộc gọi</Text>
                     </View>
-                    <Text style={styles.vach}></Text>
+                <Text style={styles.vach}></Text>
                     <View style={styles.setting}>
                         <FontAwesome5 name="address-book" size={24} color="blue" />
                         <Text style={styles.settingContent} >Danh bạ</Text>
                     </View>
-                    </View >
+                </View >
 
-                    <View style={styles.settingWrap}>
-                        <View style={styles.setting}>
-                            <Ionicons name="information-circle-outline" size={24} color="blue" />
-                            <Text style={styles.settingContent} >Thông tin về ứng dụng</Text>
-                        </View>
+                <View style={styles.settingWrap}>
+                    <View style={styles.setting}>
+                        <Ionicons name="information-circle-outline" size={24} color="blue" />
+                        <Text style={styles.settingContent} >Thông tin về ứng dụng</Text>
                     </View>
                 </View>
             </ScrollView>
@@ -75,9 +72,6 @@ function Setting() {
      )
 }
 const styles = StyleSheet.create({
-    container: {
-
-    },
     settingWrap: {
         marginBottom: 10,
         borderRadius: 10,

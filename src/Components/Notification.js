@@ -7,49 +7,45 @@ function Notification() {
         <View>
             <Header/>
             <ScrollView>
-                <View style={styles.container}>
-                    <Text style={styles.status}>Mới</Text>
-                    <View >
-                        <View style={styles.chat}>
-                            <Image style={styles.avatar} source={mes}/>
-                            <View style={styles.chatContent}>
-                                <Text style={styles.userName}>nguoi dung</Text>
-                                <Text> hung da binh luan bai viet cua ban</Text>
-                            </View>
+                <Text style={styles.status}>Mới</Text>
+                <View >
+                    <View style={styles.chat}>
+                        <Image style={styles.avatar} source={mes}/>
+                        <View style={styles.chatContent}>
+                            <Text style={styles.userName}>nguoi dung</Text>
+                            <Text> hung da binh luan bai viet cua ban</Text>
                         </View>
-                        <Text style={styles.vach}></Text>
                     </View>
-                    <View >
-                        <View style={styles.chat}>
-                            <Image style={styles.avatar} source={mes}/>
-                            <View style={styles.chatContent}>
-                                <Text style={styles.userName}>nguoi dung</Text>
-                                <Text> hung da binh luan bai viet cua ban</Text>
-                            </View>
-                        </View>
-                        <Text style={styles.vach}></Text>
-                    </View>
-                    <Text style={styles.status}>Trước đó</Text>
-                    {chatData.map((item)=>(
-                        <View key ={item.id}>
-                            <View style={styles.chat}>
-                                <Image style={styles.avatar} source={item.avtar}/>
-                                <View style={styles.chatContent}>
-                                    <Text style={styles.userName}>nguoi dung</Text>
-                                    <Text>{item.content}</Text>
-                                </View>
-                            </View>
-                            <Text style={styles.vach}></Text>
-                        </View>
-                    ))}
+                    <Text style={styles.vach}></Text>
                 </View>
+                <View >
+                    <View style={styles.chat}>
+                        <Image style={styles.avatar} source={mes}/>
+                        <View style={styles.chatContent}>
+                            <Text style={styles.userName}>nguoi dung</Text>
+                            <Text> hung da binh luan bai viet cua ban</Text>
+                        </View>
+                    </View>
+                    <Text style={styles.vach}></Text>
+                </View>
+                <Text style={styles.status}>Trước đó</Text>
+                {chatData.map((item)=>(
+                    <View key ={item.id}>
+                        <View style={styles.chat}>
+                            <Image style={styles.avatar} source={item.avtar}/>
+                            <View style={styles.chatContent}>
+                                <Text style={styles.userName}>nguoi dung</Text>
+                                <Text>{item.content}</Text>
+                            </View>
+                        </View>
+                        <Text style={styles.vach}></Text>
+                    </View>
+                ))}
             </ScrollView>
         </View>
      )
 }
 const styles = StyleSheet.create({
-    container: {
-    },
     chat: {
         flexDirection: 'row',
         padding: 20,
@@ -68,7 +64,6 @@ const styles = StyleSheet.create({
         marginRight: 10,
     },
     userName: {
-        // fontWeight: 900,
         marginBottom: 5,
     },
     chatContent: {
@@ -77,8 +72,9 @@ const styles = StyleSheet.create({
     status: {
         marginLeft: 10,
         fontSize: 20,
-        // fontWeight: 700,
+        fontWeight: '900',
         padding: 10,
+        color: 'blue'
     }
 })
 export default Notification
