@@ -4,28 +4,27 @@ function Login({navigation}) {
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     return ( 
-        <SafeAreaView>
-            <View style={styles.login}>
+        <View style={styles.login}>
             <View style={styles.title}>
                 <Text style={styles.title}>Social network</Text>
             </View>
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setName}
-                    placeholder="Tên đăng nhập"
-                    value={name}
-                />
-                <TextInput
-                    style={styles.input}
-                    onChangeText={setPassword}
-                    value={password}
-                    placeholder="Mật khẩu"
-                />
-                <View style={styles.information}>
+            <TextInput
+                style={styles.input}
+                onChangeText={setName}
+                placeholder="Tên đăng nhập"
+                value={name}
+            />
+            <TextInput
+                style={styles.input}
+                onChangeText={setPassword}
+                value={password}
+                placeholder="Mật khẩu"
+            />
+            <View style={styles.information}>
                 <Text>Tài khoản phải từ 6 đến 20 kí tự </Text>
                 <Text>Mật khẩu phải từ 6 đến 20 kí tự</Text>
-                </View>
-                <View style={styles.submit}>
+            </View>
+            <View style={styles.submit}>
                 <View style={styles.submitLogin}>
                     <Button
                         title="Login"
@@ -35,7 +34,7 @@ function Login({navigation}) {
                         color= '#333'
                     />
                 </View>
-                    <View style={styles.submitLogin}>
+                <View style={styles.submitLogin}>
                     <Button
                         title="Sign Up"
                         onPress={() =>
@@ -43,10 +42,9 @@ function Login({navigation}) {
                         }
                         color= '#b7b5b5'
                     />
-                    </View>
                 </View>
             </View>
-      </SafeAreaView>
+        </View>
     )
 }
 const styles = StyleSheet.create({
@@ -58,14 +56,14 @@ const styles = StyleSheet.create({
         bottom: 30,
     },
     login: {
-        marginTop: '50%',
+        marginTop: '40%',
     },
     input: {
         height: 40,
         margin: 12,
         borderWidth: 0.5,
         padding: 10,
-        borderRadius: 999999,
+        borderRadius: 100,
     },
       submit: {
         marginLeft: 10,

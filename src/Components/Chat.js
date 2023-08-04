@@ -1,8 +1,8 @@
-import { StyleSheet,View , Text, Image,ScrollView} from 'react-native'
+import { StyleSheet,View , Text, Image,ScrollView, TouchableOpacity} from 'react-native'
 import Header from '../Components/Header'
 import mes from '../Utils/Img/1.png'
 import chatData from '../Utils/Js/chat'
-function Chat() {
+function Chat({navigation}) {
     return ( 
         <View>
             <Header/>
@@ -41,14 +41,18 @@ function Chat() {
                 </View>
                 {chatData.map((item)=>(
                     <View key ={item.id}>
-                    <View style={styles.chat}>
-                        <Image style={styles.avatar} source={item.avtar}/>
-                            <View style={styles.chatContent}>
-                            <Text style={styles.userName}>nguoi dung</Text>
-                            <Text>{item.content}</Text>
-                        </View>
-                    </View>
-                    <Text style={styles.vach}></Text>
+                        <TouchableOpacity style={styles.chat}
+                            onPress={()=> 
+                                navigation.navigate('ChatMain')
+                            }
+                        >
+                            <Image style={styles.avatar} source={item.avtar}/>
+                                <View style={styles.chatContent}>
+                                <Text style={styles.userName}>nguoi dung</Text>
+                                <Text>{item.content}</Text>
+                            </View>
+                        </TouchableOpacity>
+                        <Text style={styles.vach}></Text>
                     </View>
                 ))}
             </ScrollView>

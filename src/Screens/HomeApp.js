@@ -76,6 +76,5 @@ const styles = StyleSheet.create({
         width: '100%', 
         height: '100%', 
         backgroundColor: '#e1e3e0ee',
-        paddingTop: '10%'
     }})
 export default HomeApp

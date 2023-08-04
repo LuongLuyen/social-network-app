@@ -127,6 +127,8 @@ const styles = StyleSheet.create({
     },
     title: {
         marginBottom: 8,
+        fontSize: 16,
+        fontWeight: '800'
     },
     category: {
         width: '100%',
