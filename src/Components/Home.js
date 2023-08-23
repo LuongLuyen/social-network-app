@@ -21,7 +21,7 @@ function Home() {
                             placeholder="Bạn đang nghĩ gì ?"
                             value={name}
                         />
-                        <Ionicons style={styles.youUpload} name="cloud-upload-outline" size={24} color="black" />
+                        <Ionicons style={styles.youUpload} name="cloud-upload-outline" size={24} color="blue" />
                     </View> 
                     {data.map((item)=>(
                         <View style={styles.item}

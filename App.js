@@ -19,7 +19,7 @@ export default function App() {
           component={HomeApp}
         />
         <Stack.Screen 
-          name="ChatMain" 
+          name="ChatMain" options={{title: 'Chat'}}
           component={ChatMain}
         />
     </Stack.Navigator>

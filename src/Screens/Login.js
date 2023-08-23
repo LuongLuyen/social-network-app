@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         margin: 12,
         borderWidth: 0.5,
         padding: 10,
-        borderRadius: 100,
+        borderRadius: 10,
     },
       submit: {
         marginLeft: 10,

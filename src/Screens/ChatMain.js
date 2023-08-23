@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
         marginRight:5
     },
     main: {
-        height: '84%',
+        height: '82%',
     },
     user: {
         width: 40,
